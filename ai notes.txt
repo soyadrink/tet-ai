@@ -1,0 +1,16 @@
+actions
+do nothing [1, 0, 0, 0, 0, 0, 0, 0]
+left       [0, 1, 0, 0, 0, 0, 0, 0]
+right      [0, 0, 1, 0, 0, 0, 0, 0]
+clockwise  [0, 0, 0, 1, 0, 0, 0, 0]
+countercw  [0, 0, 0, 0, 1, 0, 0, 0]
+soft drop  [0, 0, 0, 0, 0, 1, 0, 0]
+hard drop  [0, 0, 0, 0, 0, 0, 1, 0]
+hold       [0, 0, 0, 0, 0, 0, 0, 1]
+
+state
+board occupation (200 tiles) (200 binary values)
+tetromino position and rotation (4 tiles) [(row, col), (row, col), (row, col), (row, col)] (8 integers)
+next tetrominos (5 tetrominos of 7 different tetrominos) (5 integers)
+hold tetromino (none or 7 different tetrominos) (1 integer)
+holdable (true or false) (1 binary value)
